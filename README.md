@@ -5,7 +5,7 @@ See the original API documentation at the [Ali Express Open Platform](https://de
 
 ## How to install
 ```sh
-pip install git+https://github.com/bayborodin/python-project-lvl2
+pip install git+https://github.com/bayborodin/aliexpress-sdk
 ```
 
 ## Contributing
