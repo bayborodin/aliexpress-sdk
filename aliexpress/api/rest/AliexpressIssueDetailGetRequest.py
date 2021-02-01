@@ -1,0 +1,14 @@
+"""
+Created by auto_sdk on 2019.10.30
+"""
+from aliexpress.api.base import RestApi
+
+
+class AliexpressIssueDetailGetRequest(RestApi):
+    def __init__(self, domain="gw.api.taobao.com", port=80):
+        RestApi.__init__(self, domain, port)
+        self.buyer_login_id = None
+        self.issue_id = None
+
+    def getapiname(self):
+        return "aliexpress.issue.detail.get"
