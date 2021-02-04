@@ -1,10 +1,9 @@
-"""
-Created by auto_sdk on 2018.07.25
-"""
 from aliexpress.api.base import RestApi
 
 
-class AliexpressDataRedefiningQueryproductfavoritedinfoeverydaybyidRequest(RestApi):
+class AliexpressDataRedefiningQueryproductfavoritedinfoeverydaybyidRequest(
+    RestApi
+):
     def __init__(self, domain="gw.api.taobao.com", port=80):
         RestApi.__init__(self, domain, port)
         self.current_page = None
@@ -14,4 +13,6 @@ class AliexpressDataRedefiningQueryproductfavoritedinfoeverydaybyidRequest(RestA
         self.start_date = None
 
     def getapiname(self):
-        return "aliexpress.data.redefining.queryproductfavoritedinfoeverydaybyid"
+        return (
+            "aliexpress.data.redefining.queryproductfavoritedinfoeverydaybyid"
+        )

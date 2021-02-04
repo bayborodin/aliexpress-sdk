@@ -1,6 +1,3 @@
-"""
-Created by auto_sdk on 2018.07.25
-"""
 from aliexpress.api.base import RestApi
 
 
@@ -15,6 +12,4 @@ class AliexpressLogisticsRedefiningSellermodifiedshipmentsupportsubtradeorderReq
         self.trade_order_id = None
 
     def getapiname(self):
-        return (
-            "aliexpress.logistics.redefining.sellermodifiedshipmentsupportsubtradeorder"
-        )
+        return "aliexpress.logistics.redefining.sellermodifiedshipmentsupportsubtradeorder"

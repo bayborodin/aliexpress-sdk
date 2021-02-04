@@ -1,6 +1,3 @@
-"""
-Created by auto_sdk on 2019.12.30
-"""
 from aliexpress.api.base import RestApi
 
 
@@ -14,6 +11,4 @@ class AliexpressCategoryRedefiningGetchildattributesresultbypostcateidandpathReq
         self.param2 = None
 
     def getapiname(self):
-        return (
-            "aliexpress.category.redefining.getchildattributesresultbypostcateidandpath"
-        )
+        return "aliexpress.category.redefining.getchildattributesresultbypostcateidandpath"

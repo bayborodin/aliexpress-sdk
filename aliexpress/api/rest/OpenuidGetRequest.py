@@ -1,6 +1,3 @@
-"""
-Created by auto_sdk on 2018.10.17
-"""
 from aliexpress.api.base import RestApi
 
 
