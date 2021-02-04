@@ -1,11 +1,38 @@
 [tool.poetry]
 name = "aliexpress-sdk"
 version = "0.1.1"
-description = ""
+description = "Python wrapper of the AliExpress API for sellers"
 authors = ["Nicholas Bayborodin <nicholas.bayborodin@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/bayborodin/aliexpress-sdk"
+repository = "https://github.com/bayborodin/aliexpress-sdk"
+keywords = ["aliexpress", "api", "sdk"]
+include = [
+    "LICENSE",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 packages = [
     { include = "aliexpress" },
 ]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+ensure_newline_before_comments = true
+
+[tool.black]
+line-length = 79
+target-version = ['py36', 'py37', 'py38']
+
+[tool.poetry.scripts]
+aliexpress-cli = "aliexpress.scripts.cli:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -16,9 +43,9 @@ pytest = "^5.2"
 black = {version = "^20.8b1", allow-prereleases = true}
 flake8 = "^3.8.4"
 
+[flake8]
+max-line-length = 79
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-aliexpress-cli = "aliexpress.scripts.cli:main"
