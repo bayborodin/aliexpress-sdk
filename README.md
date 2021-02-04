@@ -8,6 +8,10 @@ See the original API documentation at the [Ali Express Open Platform](https://de
 [![GitHub last commit](https://img.shields.io/github/last-commit/bayborodin/aliexpress-sdk)](https://github.com/bayborodin/aliexpress-sdk)
 
 ## How to install
+```
+pip install aliexpress-sdk
+```
+or (for pre-release):
 ```sh
 pip install git+https://github.com/bayborodin/aliexpress-sdk
 ```
