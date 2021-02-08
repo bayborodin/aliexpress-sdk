@@ -1,6 +1,6 @@
 from aliexpress.api.base import sign
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 
 class appinfo(object):

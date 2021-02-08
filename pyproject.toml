@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aliexpress-sdk"
-version = "0.1.1"
+version = "0.1.3"
 description = "Python wrapper of the AliExpress API for sellers"
 authors = ["Nicholas Bayborodin <nicholas.bayborodin@gmail.com>"]
 license = "MIT"

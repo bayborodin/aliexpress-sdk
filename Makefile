@@ -4,10 +4,13 @@ install:
 lint:
 	poetry run flake8 aliexpress
 
+test:
+	poetry run pytest -vv --color=yes
+
 selfcheck:
 	poetry check
 
-check: selfcheck
+check: selfcheck test
 
 build: check
 	poetry build

@@ -12,4 +12,7 @@ class AliexpressLogisticsRedefiningSellermodifiedshipmentsupportsubtradeorderReq
         self.trade_order_id = None
 
     def getapiname(self):
-        return "aliexpress.logistics.redefining.sellermodifiedshipmentsupportsubtradeorder"
+        return (
+            "aliexpress.logistics.redefining."
+            "sellermodifiedshipmentsupportsubtradeorder"
+        )
