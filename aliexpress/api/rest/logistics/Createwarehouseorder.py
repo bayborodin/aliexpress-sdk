@@ -1,8 +1,8 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressLogisticsCreatewarehouseorderRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+class CreateWarehouseOrderRequest(RestApi):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.address_d_t_os = None
         self.declare_product_d_t_os = None
@@ -19,4 +19,4 @@ class AliexpressLogisticsCreatewarehouseorderRequest(RestApi):
         self.warehouse_carrier_service = None
 
     def getapiname(self):
-        return "aliexpress.logistics.createwarehouseorder"
+        return 'aliexpress.logistics.createwarehouseorder'

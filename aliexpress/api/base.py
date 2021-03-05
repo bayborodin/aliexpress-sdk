@@ -1,15 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on 2012-7-3
-
-@author: lihao
-"""
-
 try:
     import http.client
 except ImportError:
     import http.client as httplib
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import time
 import hashlib
 import json
@@ -17,9 +12,6 @@ import aliexpress.api
 import itertools
 import mimetypes
 
-"""
-定义一些系统变量
-"""
 
 SYSTEM_GENERATE_VERSION = "taobao-sdk-python-20200921"
 
@@ -44,13 +36,6 @@ N_REST = "/router/rest"
 
 
 def sign(secret, parameters):
-    # ===========================================================================
-    # '''签名方法
-    # @param secret: 签名需要的密钥
-    # @param parameters: 支持字典和string两种
-    # '''
-    # ===========================================================================
-    # 如果parameters 是字典类的话
     if hasattr(parameters, "items"):
         keys = list(parameters.keys())
         keys.sort()
@@ -100,7 +85,8 @@ class MultiPartForm(object):
         """Add a file to be uploaded."""
         body = fileHandle.read()
         if mimetype is None:
-            mimetype = mimetypes.guess_type(filename)[0] or "application/octet-stream"
+            mimetype = mimetypes.guess_type(
+                filename)[0] or "application/octet-stream"
         self.files.append(
             (mixStr(fieldname), mixStr(filename), mixStr(mimetype), mixStr(body))
         )
@@ -108,10 +94,6 @@ class MultiPartForm(object):
 
     def __str__(self):
         """Return a string representing the form data, including attached files."""
-        # Build a list of lists, each containing "lines" of the
-        # request.  Each part is separated by a boundary string.
-        # Once the list is built, return a string where each
-        # line is separated by '\r\n'.
         parts = []
         part_boundary = "--" + self.boundary
 
@@ -150,9 +132,6 @@ class MultiPartForm(object):
 
 
 class TopException(Exception):
-    # ===========================================================================
-    # 业务异常类
-    # ===========================================================================
     def __init__(self):
         self.errorcode = None
         self.message = None
@@ -180,23 +159,12 @@ class TopException(Exception):
 
 
 class RequestException(Exception):
-    # ===========================================================================
-    # 请求连接异常类
-    # ===========================================================================
     pass
 
 
 class RestApi(object):
-    # ===========================================================================
-    # Rest api的基类
-    # ===========================================================================
 
     def __init__(self, domain="gw.api.taobao.com", port=80):
-        # =======================================================================
-        # 初始化基类
-        # Args @param domain: 请求的域名或者ip
-        #      @param port: 请求的端口
-        # =======================================================================
         self.__domain = domain
         self.__port = port
         self.__httpmethod = "POST"
@@ -212,11 +180,6 @@ class RestApi(object):
         }
 
     def set_app_info(self, appinfo):
-        # =======================================================================
-        # 设置请求的app信息
-        # @param appinfo: import top
-        #                 appinfo top.appinfo(appkey,secret)
-        # =======================================================================
         self.__app_key = appinfo.appkey
         self.__secret = appinfo.secret
 
@@ -233,15 +196,13 @@ class RestApi(object):
         pass
 
     def getResponse(self, authrize=None, timeout=30):
-        # =======================================================================
-        # 获取response结果
-        # =======================================================================
         if self.__port == 443:
             connection = http.client.HTTPSConnection(
                 self.__domain, self.__port, None, None, False, timeout
             )
         else:
-            connection = http.client.HTTPConnection(self.__domain, self.__port, timeout)
+            connection = http.client.HTTPConnection(
+                self.__domain, self.__port, timeout)
         sys_parameters = {
             P_FORMAT: "json",
             P_APPKEY: self.__app_key,

@@ -2,7 +2,7 @@ from aliexpress.api.base import RestApi
 
 
 class AliexpressIssueImageUploadRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.buyer_login_id = None
         self.extension = None
@@ -10,7 +10,7 @@ class AliexpressIssueImageUploadRequest(RestApi):
         self.issue_id = None
 
     def getapiname(self):
-        return "aliexpress.issue.image.upload"
+        return 'aliexpress.issue.image.upload'
 
     def getMultipartParas(self):
-        return ["image_bytes"]
+        return ['image_bytes']

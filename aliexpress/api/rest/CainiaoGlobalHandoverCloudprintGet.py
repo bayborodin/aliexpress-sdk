@@ -11,4 +11,4 @@ class CainiaoGlobalHandoverCloudprintGetRequest(RestApi):
         self.user_info = None
 
     def getapiname(self):
-        return "cainiao.global.handover.cloudprint.get"
+        return 'cainiao.global.handover.cloudprint.get'

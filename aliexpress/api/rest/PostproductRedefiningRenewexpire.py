@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressPostproductRedefiningRenewexpireRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+class PostproductRedefiningRenewexpireRequest(RestApi):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.product_id = None
 
     def getapiname(self):
-        return "aliexpress.postproduct.redefining.renewexpire"
+        return 'postproduct.redefining.renewexpire'

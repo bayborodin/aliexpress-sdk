@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressLogisticsRedefiningGetonlinelogisticsservicelistbyorderidRequest(
+class RedefiningGetonlinelogisticsservicelistbyorderidRequest(
     RestApi
 ):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.goods_height = None
         self.goods_length = None
@@ -14,4 +14,4 @@ class AliexpressLogisticsRedefiningGetonlinelogisticsservicelistbyorderidRequest
         self.order_id = None
 
     def getapiname(self):
-        return "aliexpress.logistics.redefining.getonlinelogisticsservicelistbyorderid"
+        return 'aliexpress.logistics.redefining.getonlinelogisticsservicelistbyorderid'

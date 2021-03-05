@@ -2,7 +2,7 @@ from aliexpress.api.base import RestApi
 
 
 class CainiaoGlobalHandoverContentQueryRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.client = None
         self.locale = None
@@ -11,4 +11,4 @@ class CainiaoGlobalHandoverContentQueryRequest(RestApi):
         self.user_info = None
 
     def getapiname(self):
-        return "cainiao.global.handover.content.query"
+        return 'cainiao.global.handover.content.query'
