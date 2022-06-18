@@ -23,7 +23,7 @@ from aliexpress.api.rest.logistics.RedefiningGetallprovince import (
     RedefiningGetallprovinceRequest,
 )
 from aliexpress.api.rest.MerchantRedefiningQuerydsrddisputeproductlist import (
-    AliexpressMerchantRedefiningQuerydsrddisputeproductlistRequest,
+    MerchantRedefiningQuerydsrddisputeproductlistRequest,
 )
 from aliexpress.api.rest.SolutionIssuePartnerRmaStateUpdate import (
     AliexpressSolutionIssuePartnerRmaStateUpdateRequest,
@@ -50,7 +50,7 @@ from aliexpress.api.rest.MerchantOverseaBrandGet import (
     AliexpressMerchantOverseaBrandGetRequest,
 )
 from aliexpress.api.rest.MarketingLimitdiscountpromotionEdit import (
-    AliexpressMarketingLimitdiscountpromotionEditRequest,
+    MarketingLimitdiscountpromotionEditRequest,
 )
 from aliexpress.api.rest.PostproductRedefiningEditmultilanguageproduct import (
     PostproductRedefiningEditmultilanguageproductRequest,
@@ -85,9 +85,6 @@ from aliexpress.api.rest.PhotobankRedefiningUploadimage import (
 from aliexpress.api.rest.PostproductRedefiningFindaeproductmodulebyid import (
     PostproductRedefiningFindaeproductmodulebyidRequest,
 )
-from aliexpress.api.rest.MessageFaqwelcomeEdit import (
-    AliexpressMessageFaqwelcomeEditRequest,
-)
 from aliexpress.api.rest.OfferProductPost import (
     AliexpressOfferProductPostRequest,
 )
@@ -95,7 +92,7 @@ from aliexpress.api.rest.PostproductRedefiningEditaeproduct import (
     PostproductRedefiningEditaeproductRequest,
 )
 from aliexpress.api.rest.TradeSellerOrderlistGet import (
-    AliexpressTradeSellerOrderlistGetRequest,
+    TradeSellerOrderlistGetRequest,
 )
 from aliexpress.api.rest.CainiaoGlobalHandoverSavedraft import (
     CainiaoGlobalHandoverSavedraftRequest,
@@ -172,9 +169,6 @@ from aliexpress.api.rest.logistics.Createwarehouseorder import (
 from aliexpress.api.rest.EvaluationListorderevaluationGet import (
     AliexpressEvaluationListorderevaluationGetRequest,
 )
-from aliexpress.api.rest.MessageFaqwelcomeAdd import (
-    AliexpressMessageFaqwelcomeAddRequest,
-)
 from aliexpress.api.rest.PostproductRedefiningPostmultilanguageaeproduct import (
     PostproductRedefiningPostmultilanguageaeproductRequest,
 )
@@ -199,17 +193,11 @@ from aliexpress.api.rest.CategoryRedefiningGetchildattributesresultbypostcateida
 from aliexpress.api.rest.MarketingStorepromotionProductsQuery import (
     AliexpressMarketingStorepromotionProductsQueryRequest,
 )
-from aliexpress.api.rest.MessageFaqEdit import (
-    AliexpressMessageFaqEditRequest,
-)
-from aliexpress.api.rest.MessageRedefiningVersiontwoQuerymsgdetaillist import (
-    AliexpressMessageRedefiningVersiontwoQuerymsgdetaillistRequest,
+from aliexpress.api.rest.message.MessageFaqEdit import (
+    MessageFaqEditRequest,
 )
 from aliexpress.api.rest.OfferProductSkupricesEdit import (
     AliexpressOfferProductSkupricesEditRequest,
-)
-from aliexpress.api.rest.MessageFaqList import (
-    AliexpressMessageFaqListRequest,
 )
 from aliexpress.api.rest.CainiaoGlobalHandoverCloudprintGet import (
     CainiaoGlobalHandoverCloudprintGetRequest,
@@ -218,7 +206,7 @@ from aliexpress.api.rest.MerchantRedefiningQueryremark import (
     AliexpressMerchantRedefiningQueryremarkRequest,
 )
 from aliexpress.api.rest.TradeSellerOrderAcceptcancel import (
-    AliexpressTradeSellerOrderAcceptcancelRequest,
+    TradeSellerOrderAcceptcancelRequest,
 )
 from aliexpress.api.rest.TopIpoutGet import TopIpoutGetRequest
 from aliexpress.api.rest.SolutionMerchantProfileGet import (
@@ -251,9 +239,6 @@ from aliexpress.api.rest.SolutionBatchProductInventoryUpdate import (
 from aliexpress.api.rest.CainiaoGlobalHandoverPdfGet import (
     CainiaoGlobalHandoverPdfGetRequest,
 )
-from aliexpress.api.rest.MessageFaqwelcomeDel import (
-    AliexpressMessageFaqwelcomeDelRequest,
-)
 from aliexpress.api.rest.HttpdnsGet import HttpdnsGetRequest
 from aliexpress.api.rest.CategoryRedefiningGetpostcategorybyid import (
     AliexpressCategoryRedefiningGetpostcategorybyidRequest,
@@ -280,9 +265,6 @@ from aliexpress.api.rest.CainiaoGlobalHandoverContentQuery import (
 )
 from aliexpress.api.rest.SolutionOrderFulfill import (
     AliexpressSolutionOrderFulfillRequest,
-)
-from aliexpress.api.rest.MessageFaqwelcomeGet import (
-    AliexpressMessageFaqwelcomeGetRequest,
 )
 from aliexpress.api.rest.FreightRedefiningListfreighttemplate import (
     AliexpressFreightRedefiningListfreighttemplateRequest,
@@ -315,11 +297,8 @@ from aliexpress.api.rest.TradeRedefiningFindordertradeinfo import (
 from aliexpress.api.rest.logistics.RedefiningGetprintinfos import (
     RedefiningGetprintinfosRequest,
 )
-from aliexpress.api.rest.MessageFaqAdd import (
-    AliexpressMessageFaqAddRequest,
-)
-from aliexpress.api.rest.MessageRedefiningVersiontwoQuerymsgdetaillistbybuyerid import (
-    AliexpressMessageRedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest,
+from aliexpress.api.rest.message.FaqAdd import (
+    FaqAddRequest,
 )
 from aliexpress.api.rest.SolutionProductEdit import (
     AliexpressSolutionProductEditRequest,
@@ -363,9 +342,6 @@ from aliexpress.api.rest.logistics.RedefiningGetfieldinfoforprint import (
 from aliexpress.api.rest.AppraiseRedefiningQuerysellerevaluationorderlist import (
     AliexpressAppraiseRedefiningQuerysellerevaluationorderlistRequest,
 )
-from aliexpress.api.rest.MessageRedefiningVersiontwoUpdatemsgprocessed import (
-    AliexpressMessageRedefiningVersiontwoUpdatemsgprocessedRequest,
-)
 from aliexpress.api.rest.PostproductRedefiningEditmutilpleskustocks import (
     PostproductRedefiningEditmutilpleskustocksRequest,
 )
@@ -408,9 +384,6 @@ from aliexpress.api.rest.SolutionFeedQuery import (
 from aliexpress.api.rest.MerchantRedefiningSaveremark import (
     AliexpressMerchantRedefiningSaveremarkRequest,
 )
-from aliexpress.api.rest.MessageRedefiningVersiontwoQuerymsgrelationlist import (
-    AliexpressMessageRedefiningVersiontwoQuerymsgrelationlistRequest,
-)
 from aliexpress.api.rest.OfferRedefiningGetcanusedproductbysizetemplateid import (
     AliexpressOfferRedefiningGetcanusedproductbysizetemplateidRequest,
 )
@@ -447,9 +420,6 @@ from aliexpress.api.rest.OfferDraftproductGet import (
 from aliexpress.api.rest.CainiaoGlobalHandoverCancel import (
     CainiaoGlobalHandoverCancelRequest,
 )
-from aliexpress.api.rest.MessageRedefiningVersiontwoUpdatemsgread import (
-    AliexpressMessageRedefiningVersiontwoUpdatemsgreadRequest,
-)
 from aliexpress.api.rest.OfferRedefiningCreatebundle import (
     AliexpressOfferRedefiningCreatebundleRequest,
 )
@@ -471,11 +441,8 @@ from aliexpress.api.rest.PostproductRedefiningGetwindowproducts import (
 from aliexpress.api.rest.OpenuidGetBymixnick import (
     OpenuidGetBymixnickRequest,
 )
-from aliexpress.api.rest.MessageRedefiningVersiontwoUpdatemsgrank import (
-    AliexpressMessageRedefiningVersiontwoUpdatemsgrankRequest,
-)
-from aliexpress.api.rest.MessageFaqGet import (
-    AliexpressMessageFaqGetRequest,
+from aliexpress.api.rest.message.FaqGet import (
+    FaqGetRequest,
 )
 from aliexpress.api.rest.CategoryRedefiningGetallchildattributesresult import (
     AliexpressCategoryRedefiningGetallchildattributesresultRequest,
@@ -520,7 +487,7 @@ from aliexpress.api.rest.MarketingRedefiningGetactlist import (
     AliexpressMarketingRedefiningGetactlistRequest,
 )
 from aliexpress.api.rest.MarketingLimitdiscountpromotionCreate import (
-    AliexpressMarketingLimitdiscountpromotionCreateRequest,
+    MarketingLimitdiscountpromotionCreateRequest,
 )
 from aliexpress.api.rest.SolutionIssuePartnerRmaReverselogisticTrackinginfoCreate import (
     AliexpressSolutionIssuePartnerRmaReverselogisticTrackinginfoCreateRequest,
@@ -534,8 +501,8 @@ from aliexpress.api.rest.logistics.ValueaddedInsuranceEstimate import (
 from aliexpress.api.rest.PostproductRedefiningClaimtaobaoproductsapi import (
     PostproductRedefiningClaimtaobaoproductsapiRequest,
 )
-from aliexpress.api.rest.MessageRedefiningVersiontwoAddmsg import (
-    AliexpressMessageRedefiningVersiontwoAddmsgRequest,
+from aliexpress.api.rest.message.RedefiningVersiontwoAddmsg import (
+    RedefiningVersiontwoAddmsgRequest,
 )
 from aliexpress.api.rest.PostproductRedefiningEditsimpleproductfiled import (
     PostproductRedefiningEditsimpleproductfiledRequest,
@@ -546,17 +513,14 @@ from aliexpress.api.rest.logistics.Querysellershipmentinfo import (
 from aliexpress.api.rest.logistics.RedefiningGetnextleveladdressdata import (
     RedefiningGetnextleveladdressdataRequest,
 )
-from aliexpress.api.rest.MessageFaqDel import (
-    AliexpressMessageFaqDelRequest,
+from aliexpress.api.rest.message.FaqDel import (
+    FaqDelRequest,
 )
 from aliexpress.api.rest.PostproductRedefiningSetgroups import (
     PostproductRedefiningSetgroupsRequest,
 )
 from aliexpress.api.rest.ProductProductgroupsGet import (
     ProductProductgroupsGetRequest,
-)
-from aliexpress.api.rest.MessageRedefiningVersiontwoQuerymsgchannelidbybuyerid import (
-    AliexpressMessageRedefiningVersiontwoQuerymsgchannelidbybuyeridRequest,
 )
 from aliexpress.api.rest.logistics.RedefiningQureywlbdomesticlogisticscompany import (
     RedefiningQureywlbdomesticlogisticscompanyRequest,

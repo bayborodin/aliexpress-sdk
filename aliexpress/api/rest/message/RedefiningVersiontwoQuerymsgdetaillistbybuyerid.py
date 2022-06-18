@@ -1,7 +1,7 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressMessageRedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest(
+class RedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest(
     RestApi
 ):
     def __init__(self, domain='gw.api.taobao.com', port=80):

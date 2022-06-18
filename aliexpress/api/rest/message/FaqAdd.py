@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class TradeSellerOrderAcceptcancelRequest(RestApi):
+class FaqAddRequest(RestApi):
     def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
-        self.param_order_cancel_request = None
+        self.param_message_faq_subject_dto = None
 
     def getapiname(self):
-        return 'aliexpress.trade.seller.order.acceptcancel'
+        return 'aliexpress.message.faq.add'
