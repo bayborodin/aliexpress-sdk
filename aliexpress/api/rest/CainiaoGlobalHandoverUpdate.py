@@ -2,7 +2,7 @@ from aliexpress.api.base import RestApi
 
 
 class CainiaoGlobalHandoverUpdateRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.client = None
         self.handover_order_id = None
@@ -17,4 +17,4 @@ class CainiaoGlobalHandoverUpdateRequest(RestApi):
         self.weight_unit = None
 
     def getapiname(self):
-        return "cainiao.global.handover.update"
+        return 'cainiao.global.handover.update'

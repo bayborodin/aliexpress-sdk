@@ -4,7 +4,7 @@ from aliexpress.api.base import RestApi
 class AliexpressDataRedefiningQueryproductviewedinfoeverydaybyidRequest(
     RestApi
 ):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.current_page = None
         self.end_date = None
@@ -13,4 +13,4 @@ class AliexpressDataRedefiningQueryproductviewedinfoeverydaybyidRequest(
         self.start_date = None
 
     def getapiname(self):
-        return "aliexpress.data.redefining.queryproductviewedinfoeverydaybyid"
+        return 'aliexpress.data.redefining.queryproductviewedinfoeverydaybyid'

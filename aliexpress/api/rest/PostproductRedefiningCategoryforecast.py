@@ -1,8 +1,8 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressPostproductRedefiningCategoryforecastRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+class PostproductRedefiningCategoryforecastRequest(RestApi):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.forecast_mode = None
         self.is_filter_by_permission = None
@@ -10,4 +10,4 @@ class AliexpressPostproductRedefiningCategoryforecastRequest(RestApi):
         self.subject = None
 
     def getapiname(self):
-        return "aliexpress.postproduct.redefining.categoryforecast"
+        return 'postproduct.redefining.categoryforecast'

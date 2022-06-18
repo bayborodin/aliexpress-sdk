@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressMessageRedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest(
+class RedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest(
     RestApi
 ):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.buyer_login_id = None
         self.current_page = None
@@ -12,4 +12,4 @@ class AliexpressMessageRedefiningVersiontwoQuerymsgdetaillistbybuyeridRequest(
         self.page_size = None
 
     def getapiname(self):
-        return "aliexpress.message.redefining.versiontwo.querymsgdetaillistbybuyerid"
+        return 'aliexpress.message.redefining.versiontwo.querymsgdetaillistbybuyerid'

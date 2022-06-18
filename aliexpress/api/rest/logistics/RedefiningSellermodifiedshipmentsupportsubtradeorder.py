@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressLogisticsRedefiningSellermodifiedshipmentsupportsubtradeorderRequest(
+class RedefiningSellermodifiedshipmentsupportsubtradeorderRequest(
     RestApi
 ):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.old_logistics_no = None
         self.old_service_name = None
@@ -13,6 +13,6 @@ class AliexpressLogisticsRedefiningSellermodifiedshipmentsupportsubtradeorderReq
 
     def getapiname(self):
         return (
-            "aliexpress.logistics.redefining."
-            "sellermodifiedshipmentsupportsubtradeorder"
+            'aliexpress.logistics.redefining.'
+            'sellermodifiedshipmentsupportsubtradeorder'
         )

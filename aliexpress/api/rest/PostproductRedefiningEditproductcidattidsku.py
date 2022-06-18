@@ -1,8 +1,8 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressPostproductRedefiningEditproductcidattidskuRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+class PostproductRedefiningEditproductcidattidskuRequest(RestApi):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.category_id = None
         self.product_id = None
@@ -10,4 +10,4 @@ class AliexpressPostproductRedefiningEditproductcidattidskuRequest(RestApi):
         self.product_skus = None
 
     def getapiname(self):
-        return "aliexpress.postproduct.redefining.editproductcidattidsku"
+        return 'postproduct.redefining.editproductcidattidsku'

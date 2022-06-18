@@ -1,10 +1,10 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressPostproductRedefiningFindaeproductprohibitedwordsRequest(
+class PostproductRedefiningFindaeproductprohibitedwordsRequest(
     RestApi
 ):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.category_id = None
         self.detail = None
@@ -13,4 +13,4 @@ class AliexpressPostproductRedefiningFindaeproductprohibitedwordsRequest(
         self.title = None
 
     def getapiname(self):
-        return "aliexpress.postproduct.redefining.findaeproductprohibitedwords"
+        return 'postproduct.redefining.findaeproductprohibitedwords'

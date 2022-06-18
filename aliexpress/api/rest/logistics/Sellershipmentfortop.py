@@ -1,8 +1,8 @@
 from aliexpress.api.base import RestApi
 
 
-class AliexpressLogisticsSellershipmentfortopRequest(RestApi):
-    def __init__(self, domain="gw.api.taobao.com", port=80):
+class SellershipmentfortopRequest(RestApi):
+    def __init__(self, domain='gw.api.taobao.com', port=80):
         RestApi.__init__(self, domain, port)
         self.description = None
         self.logistics_no = None
@@ -13,4 +13,4 @@ class AliexpressLogisticsSellershipmentfortopRequest(RestApi):
         self.tracking_website = None
 
     def getapiname(self):
-        return "aliexpress.logistics.sellershipmentfortop"
+        return 'aliexpress.logistics.sellershipmentfortop'

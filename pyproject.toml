@@ -40,8 +40,9 @@ flake8 = "^3.8.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
-black = {version = "^20.8b1", allow-prereleases = true}
 flake8 = "^3.8.4"
+wemake-python-styleguide = "^0.15.2"
+autopep8 = "^1.5.5"
 
 [flake8]
 max-line-length = 79
